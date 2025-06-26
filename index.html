@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Start Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark py-5">
+        <div class="container">
+            <div class="logo">
+                <img class="img-fluid w-75 h-75" src="./images/logo.png" alt="logo">
+            </div>
+            <div class="brand">
+                <a class="navbar-brand text-capitalize fw-bold h1 fs-4" href="#">Weather</a>
+                <p class="text-gray fs-6"> tagline goes here</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-lg-0 fs-5">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#live">Live Cameras</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <main class="flex-grow-1">
+        <header id="home" class="bg-dark vh-100 position-relative">
+            <div class="position-relative h-50 overflow-hidden">
+                <img src="./images/home.png" class="img-fluid w-100 h-100" alt="home">
+
+                <div class="container position-absolute top-50 start-50 translate-middle w-100 px-3">
+                    <form id="form">
+                        <div class="input-group shadow-lg">
+                            <input id="search" type="text"
+                                class="form-control rounded-start-pill px-4 py-3 bg-dark border-0"
+                                placeholder="Find your location..." aria-label="Find your location..."
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-primary rounded-end-pill px-4" type="submit">Find</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container position-absolute h-50 top-50 start-50 translate-middle w-100 px-3 mt-5">
+                <div class="card-group">
+                    <div class="card border-0">
+                        <div class="card-header header1 d-flex justify-content-between text-gray">
+                            <span id="day"></span>
+                            <span id="date"></span>
+                        </div>
+                        <div class="card-body body1 py-5">
+                            <h5 class="card-title text-gray mb-4" id="city"></h5>
+                            <p id="temp" class="card-text h1 fw-bold text-white text-center mb-5"></p>
+                            <i id="icon" class="text-white fs-3 px-4 mb-4"></i>
+                            <p id="status" class="card-text text-primary mb-4 fw-bold"></p>
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-header header2 text-center text-gray">
+                            <span id="day2"></span>
+                        </div>
+                        <div class="card-body body2 py-5 text-center">
+                            <div id="img2" class="mb-3">
+                                <img src="" alt="sun" class="img-fluid">
+                            </div>
+                            <p id="temp2" class="card-text h4 fw-bold text-white"></p>
+                            <span id="temp22" class="text-gray"></span>
+                            <p id="status2" class="card-text text-primary mt-4 fw-bold"></p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <div class="card-header header3 text-center text-gray">
+                            <span id="day3"></span>
+                        </div>
+                        <div class="card-body body3 py-5 text-center">
+                            <div id="img3" class="mb-3">
+                                <img src="" alt="sun" class="img-fluid">
+                            </div>
+                            <p id="temp3" class="card-text h4 fw-bold text-white"></p>
+                            <span id="temp33" class="text-gray"></span>
+                            <p id="status3" class="card-text text-primary mt-4 fw-bold"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between g-4 mb-5">
+                <div class="col-md-7">
+                    <form class="w-100">
+                        <div class="input-group shadow-sm">
+                            <input type="text"
+                                class="form-control rounded-start-pill px-4 py-2 bg-dark border-0 text-white"
+                                placeholder="Enter your email to subscribe..."
+                                aria-label="Enter your email to subscribe..." aria-describedby="button-addon2">
+                            <button class="btn btn-primary rounded-end-pill px-4 py-2" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-5 d-flex justify-content-md-end justify-content-center gap-3">
+                    <span class="fa-stack fa-xl">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse text-primary icon"></i>
+                    </span>
+                    <span class="fa-stack fa-xl">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-twitter fa-stack-1x fa-inverse text-primary icon"></i>
+                    </span>
+                    <span class="fa-stack fa-xl">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-google-plus-g fa-stack-1x fa-inverse text-primary icon"></i>
+                    </span>
+                    <span class="fa-stack fa-xl">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-pinterest-p fa-stack-1x fa-inverse text-primary icon"></i>
+                    </span>
+                </div>
+            </div>
+
+            <p class="text-white ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

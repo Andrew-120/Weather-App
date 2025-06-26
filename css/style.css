@@ -1,0 +1,103 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Titillium-web;
+  src: url(../webfonts/TitilliumWeb-Regular.ttf), format("truetype");
+  src: url(../webfonts/TitilliumWeb-Regular.woff), format("woff");
+  src: url(../webfonts/TitilliumWeb-Regular.woff2), format("woff2");
+}
+:root {
+  --bs-primary-rgb: 0, 154, 216;
+  --bs-grey-rgb: 191, 193, 200;
+  --gray-color-rgb: 191, 193, 200;
+  --white-color-rgb: 255, 255, 255;
+  --black-color-rgb: 0, 0, 0;
+}
+/* End Global Rules */
+
+/*Start Overide Bootstrap */
+.bg-primary {
+  background-color: rgb(var(--bs-primary-rgb)) !important;
+}
+
+form .form-control {
+  background-color: rgb(50, 53, 68); 
+  color: white;           
+  border: none;
+}
+
+form .form-control::placeholder {
+  color: rgb(var(--gray-color-rgb)); 
+}
+
+form .form-control:focus {
+  color: white;                      
+  background-color: rgb(50, 53, 68); 
+  border: none;
+  box-shadow: none;
+}
+
+.text-gray {
+  color: rgb(var(--gray-color-rgb));
+}
+.navbar-nav .nav-link {
+  color: rgb(var(--white-color-rgb));
+  transition: all 0.4s ease-in-out;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: rgb(var(--bs-primary-rgb));
+  border: 2px solid rgb(var(--bs-primary-rgb));
+  color: rgb(var(--bs-primary-rgb));
+  border-radius: 1.875rem;
+  padding: 0.625rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+/*End Overide Bootstrap */
+
+body {
+  font-family: Titillium-web, sans-serif;
+}
+
+.header1 {
+  background-color: rgb(45, 48, 61);
+}
+.body1 {
+  background-color: rgb(50, 53, 68);
+}
+
+.header2 {
+  background-color: rgb(34, 37, 48);
+}
+.body2 {
+  background-color: rgb(38, 41, 54);
+}
+
+.header3 {
+  background-color: rgb(45, 48, 61);
+}
+.body3 {
+  background-color: rgb(50, 53, 68);
+}
+
+footer {
+  background-color: rgb(38, 41, 54);
+}
+footer .fa-stack {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+footer .fa-stack:hover {
+  color: rgb(var(--bs-primary-rgb));
+  cursor: pointer;
+}
+footer .fa-stack:hover .icon  {
+  color: rgb(var(--white-color-rgb)) !important;
+}
