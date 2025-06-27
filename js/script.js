@@ -7,7 +7,7 @@ navLinks.forEach((link) => {
   });
 });
 
-const apiUrl = "http://api.weatherapi.com/v1";
+const apiUrl = "https://api.weatherapi.com/v1";
 const apiKey = "7ac70b09ca814995a2c215943252606";
 
 async function getWeather(city) {
