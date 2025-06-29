@@ -62,7 +62,8 @@ form .form-control:focus {
 }
 
 .hh {
-  font-size: 3.75rem;
+  font-size: 3.4375rem;
+  line-height: 3.75rem;
 }
 /*End Overide Bootstrap */
 
