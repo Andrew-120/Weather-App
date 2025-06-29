@@ -32,7 +32,7 @@ async function getWeather(city) {
 
     document.querySelector(".card-body.body1").innerHTML = `
       <h5 class="card-title text-gray mb-4">${data.location.name}</h5>
-      <p class="card-text h1 fw-bold text-white text-center mb-5">${data.current.temp_c}°C</p>
+      <p class="card-text hh fw-bold text-white text-center mb-5">${data.current.temp_c}°C</p>
       <img src="https:${data.current.condition.icon}" alt="weather icon" class="img-fluid mb-4" width="64">
       <p class="card-text text-primary mb-4 fw-bold">${data.current.condition.text}</p>
       <span class="text-gray fs-6 px-2">
@@ -109,3 +109,4 @@ window.addEventListener("DOMContentLoaded", () => {
     getWeather("Cairo");
   }
 });
+
