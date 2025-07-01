@@ -71,6 +71,7 @@ body {
   font-family: Titillium-web, sans-serif;
 }
 
+
 .header1 {
   background-color: rgb(45, 48, 61);
 }
@@ -106,3 +107,6 @@ footer .fa-stack:hover {
 footer .fa-stack:hover .icon {
   color: rgb(var(--white-color-rgb)) !important;
 }
+
+
+
