@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column bg-dark">
     <!-- Start Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark py-5">
         <div class="container">
@@ -51,7 +51,7 @@
     <!-- End Navbar -->
 
     <main class="flex-grow-1">
-        <header id="home" class="bg-dark vh-100 position-relative">
+        <header id="home" class="bg-dark position-relative">
             <div class="position-relative h-50 overflow-hidden">
                 <img src="./images/home.png" class="img-fluid w-100 h-100" alt="home">
 
@@ -67,8 +67,9 @@
                     </form>
                 </div>
             </div>
+        </header>
 
-            <div class="container position-absolute h-50 top-50 start-50 translate-middle w-100 px-3 mt-5">
+        <section class="container mb-4">
                 <div class="card-group">
                     <div class="card border-0">
                         <div class="card-header header1 d-flex justify-content-between text-gray">
@@ -80,7 +81,6 @@
                             <p id="temp" class="card-text hh fw-bold text-white text-center mb-5"></p>
                             <i id="icon" class="text-white fs-3 px-4 mb-4"></i>
                             <p id="status" class="card-text text-primary mb-4 fw-bold"></p>
-
                         </div>
                     </div>
 
@@ -112,8 +112,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+        </section>
     </main>
 
     <footer class="py-5 mt-auto">
